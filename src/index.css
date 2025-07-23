@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active {
+    background-color: white;
+    color: rgb(61, 61, 61);
+    border-left: 4px solid blue;
+}
+*{
+    /* border: 1px solid red; */
+}
