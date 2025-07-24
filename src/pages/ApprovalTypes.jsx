@@ -88,12 +88,12 @@ const ApprovalTypes = () => {
             setSearchTerm(e.target.value);
             setCurrentPage(1);
           }}
-          className="px-3 py-2 border border-gray-300 rounded-md w-[300px]"
+          className="px-3 py-2 border border-gray-300 rounded-md w-40  lg:w-[300px]"
         />
       </div>
 
       {/* Table */}
-      <div className="overflow-x-auto  h-[250px]  bg-white">
+      <div className="overflow-x-auto h-[380px]  lg:h-[250px]  bg-white">
         <table className="min-w-full text-sm ">
           <thead className="bg-gray-100">
             <tr>

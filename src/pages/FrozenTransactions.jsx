@@ -93,7 +93,7 @@ const FrozenTransactions = () => {
       </div>
 
       {/* Table */}
-      <div className="overflow-x-auto  h-[250px]  bg-white">
+      <div className="overflow-x-auto h-[380px]  lg:h-[250px]  bg-white">
         <table className="min-w-full text-sm ">
           <thead className="bg-gray-100">
             <tr>
