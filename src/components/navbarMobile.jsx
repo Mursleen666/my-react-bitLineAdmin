@@ -17,14 +17,14 @@ const NavbarMobile = ({ token, setToken }) => {
                 <Menu onClick={() => setVisible(true)} className="w-5 h-5 cursor-pointer sm:hidden" />
 
                 {/* Sidebar Menu (mobile) */}
-                <div className={`fixed top-0 left-0 overflow-y-auto w-[60%] bg-white shadow-md z-50 transform transition-transform duration-300 ${visible ? "translate-x-0" : "-translate-x-full"}`}>
-                    <div className="block lg:hidden w-full  bg-[#F5F5F5]">
+                <div className={`fixed top-0 left-0 h-screen w-[60%] bg-white shadow-md z-50 transform transition-transform duration-300 ${visible ? "translate-x-0" : "-translate-x-full"}`}>
+                    <div className="block lg:hidden w-full h-full overflow-y-auto bg-[#F5F5F5]">
                         <div className='flex flex-col font-[500] pt-6 text-[12px]'>
 
                             {/* Close Button */}
                             <ArrowLeft onClick={() => setVisible(false)} className="w-5 h-5 ml-6 mb-3 cursor-pointer" />
 
-                            <p className="text-[13px] font-normal text-gray-400 bg-[#F5F5F5] pl-8 py-3">HOME</p>
+                            <p className="text-[13px] font-normal text-gray-400 pl-8 py-3">HOME</p>
                             <NavLink onClick={() => setVisible(false)} className="hover:bg-blue-100 pl-8 py-3" to="/">Customer Users</NavLink>
                             <NavLink onClick={() => setVisible(false)} className="hover:bg-blue-100 pl-8 py-3" to="/frozenTransactions">Frozen Transactions</NavLink>
 
