@@ -82,7 +82,7 @@ const Approval = () => {
         <h1 className='font-semibold text-lg lg:text-[30px]'>Approval</h1>
         <input
           type="text"
-          placeholder="Search by name or email..."
+          placeholder="Search..."
           value={searchTerm}
           onChange={(e) => {
             setSearchTerm(e.target.value);

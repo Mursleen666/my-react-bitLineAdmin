@@ -83,7 +83,7 @@ const VenueGroupsApplication = () => {
         <h1 className='font-semibold text-lg lg:text-[30px]'>Venue Group Applications</h1>
         <input
           type="text"
-          placeholder="Search by name or email..."
+          placeholder="Search..."
           value={searchTerm}
           onChange={(e) => {
             setSearchTerm(e.target.value);
