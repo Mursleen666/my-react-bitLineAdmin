@@ -27,7 +27,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='bg-white h-[600px]'>
+    <div className='bg-white h-[540px]'>
       {token === "" ? <AdminPortal setToken={setToken} />
         :
         <>

@@ -77,7 +77,7 @@ const VenueGroupsApplication = () => {
   const handleNextPage = () => setCurrentPage((p) => Math.min(p + 1, totalPages));
 
   return (
-    <div className="relative px-5 pt-5  lg:px-7">
+    <div className="relative px-5 pt-3  lg:px-7">
       {/* Search input */}
       <div className="flex justify-between items-center mb-8 mt-6">
         <h1 className='font-semibold text-[30px]'>Venue Group Applications</h1>
@@ -94,7 +94,7 @@ const VenueGroupsApplication = () => {
       </div>
 
       {/* Table */}
-      <div className="overflow-x-auto  h-[270px]  bg-white">
+      <div className="overflow-x-auto  h-[250px]  bg-white">
         <table className="min-w-full text-sm ">
           <thead className="bg-gray-100">
             <tr>

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const SideMenu = () => {
   return (
-    <div className="hidden lg:block w-[18%] h-[552px] overflow-y-auto bg-[#F5F5F5] ">
+    <div className="hidden lg:block w-[18%] h-[490px] overflow-y-auto bg-[#F5F5F5] ">
       <div className='flex flex-col font-[600]  pt-6  text-[15px]'>
 
         <p className=" items-center text-[13px] font-normal text-gray-400  bg-[#F5F5F5] pl-8 py-3">HOME</p>

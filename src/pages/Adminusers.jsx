@@ -76,24 +76,24 @@ const Adminusers = () => {
   const handleNextPage = () => setCurrentPage((p) => Math.min(p + 1, totalPages));
 
   return (
-    <div className="relative px-5 pt-5  lg:px-7">
+    <div className="relative px-5 pt-3  lg:px-7">
       {/* Search input */}
       <div className="flex justify-between items-center mb-8 mt-6">
-        <h1 className='font-semibold text-[30px]'>Admin Users</h1>
+        <h1 className='font-semibold text-lg lg:text-[30px]'>Admin Users</h1>
         <input
           type="text"
-          placeholder="Search by name or email..."
+          placeholder="Search..."
           value={searchTerm}
           onChange={(e) => {
             setSearchTerm(e.target.value);
             setCurrentPage(1);
           }}
-          className="px-3 py-2 border border-gray-300 rounded-md w-[300px]"
+          className="px-3 py-2 border border-gray-300 rounded-md w-40  lg:w-[300px]"
         />
       </div>
 
       {/* Table */}
-      <div className="overflow-x-auto  h-[270px]  bg-white">
+      <div className="overflow-x-auto h-[380px]  lg:h-[250px]  bg-white">
         <table className="min-w-full text-sm ">
           <thead className="bg-gray-100">
             <tr>
