@@ -99,9 +99,7 @@ const VenueGroups = () => {
             <tr>
               <th className="px-3 py-2  text-left">Select</th>
               {[
-                'Code', 'First Name', 'Last Name', 'Email', 'Date of Birth',
-                'Document Verified', 'Manual Verification', 'Verification Date',
-                'Verification Status', 'Suppressed', 'Add Date'
+                'Name', 'Parent Partner', 'Total Venues'
               ].map((col) => (
                 <th key={col} className="px-3 py-2  text-left font-[500]">{col}</th>
               ))}
@@ -111,7 +109,7 @@ const VenueGroups = () => {
             {paginatedUsers.map((user) => (
               <tr
                 key={user.id}
-                className={`hover:bg-gray-100 ${selectedCheckbox === user.id ? 'bg-blue-50' : 'odd:bg-white even:bg-gray-100'}`}
+                className={`hover:bg-blue-100 ${selectedCheckbox === user.id ? 'bg-blue-50' : 'odd:bg-white even:bg-gray-100'}`}
               >
                 <td className="px-3 py-2 ">
                   <input
@@ -120,17 +118,10 @@ const VenueGroups = () => {
                     onChange={() => handleCheckboxClick(user)}
                   />
                 </td>
-                <td className="px-3 py-2 ">{user.code}</td>
-                <td className="px-3 py-2 ">{user.firstName}</td>
-                <td className="px-3 py-2 ">{user.lastName}</td>
-                <td className="px-3 py-2 ">{user.email}</td>
-                <td className="px-3 py-2 ">{user.dob}</td>
-                <td className="px-3 py-2 ">{user.documentVerified}</td>
-                <td className="px-3 py-2 ">{user.manualVerification}</td>
-                <td className="px-3 py-2 ">{user.verificationDate}</td>
-                <td className="px-3 py-2 ">{user.verificationStatus}</td>
-                <td className="px-3 py-2 ">{user.suppressed}</td>
-                <td className="px-3 py-2 ">{user.addDate}</td>
+                <td className="px-3 py-3 ">{user.firstName}</td>
+                <td className="px-3 py-3 ">{user.lastName}</td>
+             
+                <td className="px-3 py-3 ">{user.addDate}</td>
               </tr>
             ))}
           </tbody>
