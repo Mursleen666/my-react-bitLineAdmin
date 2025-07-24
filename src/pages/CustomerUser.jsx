@@ -79,7 +79,7 @@ const CustomerUser = () => {
     <div className="relative px-5 pt-3  lg:px-7">
       {/* Search input */}
       <div className="flex justify-between items-center mb-8 mt-6">
-        <h1 className='font-semibold text-[30px]'>Customer Users</h1>
+        <h1 className='font-semibold text-lg lg:text-[30px]'>Customer Users</h1>
         <input
           type="text"
           placeholder="Search by name or email..."
@@ -88,8 +88,7 @@ const CustomerUser = () => {
             setSearchTerm(e.target.value);
             setCurrentPage(1);
           }}
-          className="px-3 py-2 border border-gray-300 rounded-md w-[300px]"
-        />
+          className="px-3 py-2 border border-gray-300 rounded-md w-40  lg:w-[300px]" />
       </div>
 
       {/* Table */}

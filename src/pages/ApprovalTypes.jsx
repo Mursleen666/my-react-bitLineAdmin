@@ -79,7 +79,7 @@ const ApprovalTypes = () => {
     <div className="relative px-5 pt-3  lg:px-7">
       {/* Search input */}
       <div className="flex justify-between items-center mb-8 mt-6">
-        <h1 className='font-semibold text-[30px]'>Approval Types</h1>
+        <h1 className='font-semibold text-lg lg:text-[30px]'>Approval Types</h1>
         <input
           type="text"
           placeholder="Search by name or email..."
